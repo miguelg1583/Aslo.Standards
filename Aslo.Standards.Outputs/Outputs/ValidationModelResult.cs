@@ -1,7 +1,7 @@
 ﻿using System;
-using Outputs.Responses;
+using Aslo.Standards.Outputs.Responses;
 
-namespace Outputs.Outputs
+namespace Aslo.Standards.Outputs.Outputs
 {
     public class ValidationModelResult<T> : ValidationResult
     {

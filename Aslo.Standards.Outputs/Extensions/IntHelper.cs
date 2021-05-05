@@ -1,4 +1,4 @@
-﻿namespace Outputs.Extensions
+﻿namespace Aslo.Standards.Outputs.Extensions
 {
     public static class IntHelper
     {

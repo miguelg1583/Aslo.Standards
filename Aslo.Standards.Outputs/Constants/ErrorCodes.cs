@@ -1,4 +1,4 @@
-﻿namespace Outputs.Constants
+﻿namespace Aslo.Standards.Outputs.Constants
 {
     public static class ErrorCodes
     {

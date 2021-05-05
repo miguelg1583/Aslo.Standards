@@ -3,12 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Outputs.Constants;
-using Outputs.Extensions;
-using Outputs.Items;
-using Outputs.Responses;
+using Aslo.Standards.Outputs.Constants;
+using Aslo.Standards.Outputs.Extensions;
+using Aslo.Standards.Outputs.Items;
+using Aslo.Standards.Outputs.Responses;
 
-namespace Outputs.Outputs
+namespace Aslo.Standards.Outputs.Outputs
 {
     public class ValidationResult : IEnumerable<Validation>
     {

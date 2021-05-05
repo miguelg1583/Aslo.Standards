@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Outputs.Responses;
+using Aslo.Standards.Outputs.Responses;
 
-namespace Outputs.Outputs
+namespace Aslo.Standards.Outputs.Outputs
 {
     public class ValidationTableResult<T> : ValidationResult
     {

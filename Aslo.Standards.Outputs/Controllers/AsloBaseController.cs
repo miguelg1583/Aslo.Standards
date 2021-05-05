@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using Aslo.Standards.Outputs.Factories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Outputs.Factories;
 
-namespace Outputs.Controllers
+namespace Aslo.Standards.Outputs.Controllers
 {
     public class AsloBaseController : ControllerBase
     {

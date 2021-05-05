@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outputs", "Outputs\Outputs.csproj", "{733E42E5-D955-4620-A4D9-B1AFAFF8B773}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aslo.Standards.Outputs", "Aslo.Standards.Outputs\Aslo.Standards.Outputs.csproj", "{733E42E5-D955-4620-A4D9-B1AFAFF8B773}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

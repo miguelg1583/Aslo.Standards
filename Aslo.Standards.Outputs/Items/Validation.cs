@@ -1,7 +1,7 @@
 ﻿using System;
-using Outputs.Extensions;
+using Aslo.Standards.Outputs.Extensions;
 
-namespace Outputs.Items
+namespace Aslo.Standards.Outputs.Items
 {
     public abstract class Validation : IEquatable<Validation>
     {

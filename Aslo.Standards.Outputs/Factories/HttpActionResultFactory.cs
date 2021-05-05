@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Net;
 using System.Threading.Tasks;
+using Aslo.Standards.Outputs.Controllers;
+using Aslo.Standards.Outputs.Outputs;
+using Aslo.Standards.Outputs.Responses;
 using Microsoft.AspNetCore.Mvc;
-using Outputs.Controllers;
-using Outputs.Outputs;
-using Outputs.Responses;
 
-namespace Outputs.Factories
+namespace Aslo.Standards.Outputs.Factories
 {
     public static class HttpActionResultFactory
     {

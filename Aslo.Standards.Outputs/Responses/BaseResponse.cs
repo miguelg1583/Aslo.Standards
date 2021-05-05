@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Outputs.Responses
+namespace Aslo.Standards.Outputs.Responses
 {
     public class BaseResponse
     {

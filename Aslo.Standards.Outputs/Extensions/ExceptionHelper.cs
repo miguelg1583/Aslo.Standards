@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Outputs.Extensions
+namespace Aslo.Standards.Outputs.Extensions
 {
     public static class ExceptionHelper
     {

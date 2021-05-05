@@ -1,4 +1,4 @@
-﻿namespace Outputs.Items
+﻿namespace Aslo.Standards.Outputs.Items
 {
     public class ValidationError : Validation
     {

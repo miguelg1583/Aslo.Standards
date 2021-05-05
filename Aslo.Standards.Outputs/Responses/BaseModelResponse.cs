@@ -1,4 +1,4 @@
-﻿namespace Outputs.Responses
+﻿namespace Aslo.Standards.Outputs.Responses
 {
     public class BaseModelResponse<T> : BaseResponse
     {
