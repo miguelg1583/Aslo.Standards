@@ -1,9 +1,9 @@
 ﻿using System;
 using Outputs.Extensions;
 
-namespace Outputs
+namespace Outputs.Items
 {
-    public sealed class Validation : IEquatable<Validation>
+    public abstract class Validation : IEquatable<Validation>
     {
         #region Members
 
@@ -15,13 +15,13 @@ namespace Outputs
 
         #region Constructor
 
-        private Validation(int code, string message)
+        protected Validation(int code, string message)
         {
             Code = code;
             Message = message;
         }
 
-        private Validation(int code, string message, string traceMessage)
+        protected Validation(int code, string message, string traceMessage)
         {
             Code = code;
             Message = (message ?? string.Empty).Trim();
@@ -32,10 +32,7 @@ namespace Outputs
 
         public override string ToString()
         {
-            if (Code == 0)
-                return Message;
-
-            return $"({Code.GetLowWord():D3}).({Code.GetHighWord()}) {Message}";
+            return Code == 0 ? Message : $"({Code.GetLowWord():D3}).({Code.GetHighWord()}) {Message}";
         }
 
         #region IEquatable Members
