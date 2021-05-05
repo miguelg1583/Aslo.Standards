@@ -3,10 +3,14 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
         <PackageId>Also.Standards.Outputs</PackageId>
         <Title>Also.Standards.Outputs</Title>
         <Authors>Miguel Govin</Authors>
         <Description>Standards output of sequentially or not processing</Description>
+        <PackageVersion>1.0.2</PackageVersion>
+        <AssemblyVersion>1.0.2</AssemblyVersion>
+        <FileVersion>1.0.2</FileVersion>
     </PropertyGroup>
 
     <ItemGroup>
