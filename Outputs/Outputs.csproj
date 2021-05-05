@@ -2,6 +2,11 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>Also.Standards.Outputs</PackageId>
+        <Title>Also.Standards.Outputs</Title>
+        <Authors>Miguel Govin</Authors>
+        <Description>Standards output of sequentially or not processing</Description>
     </PropertyGroup>
 
     <ItemGroup>
