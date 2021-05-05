@@ -6,10 +6,9 @@ namespace Outputs.Items
     public abstract class Validation : IEquatable<Validation>
     {
         #region Members
-
-        private int Code { get; }
-        private string Message { get; }
-        private string TraceMessage { get; }
+        public int Code { get; }
+        public string Message { get; }
+        public string TraceMessage { get; }
 
         #endregion
 
