@@ -1,4 +1,5 @@
-﻿using Outputs.Responses;
+﻿using System;
+using Outputs.Responses;
 
 namespace Outputs.Outputs
 {
@@ -6,9 +7,9 @@ namespace Outputs.Outputs
     {
         public T Model { get; set; }
 
-        public override BaseResponse ConvertToResponse()
+        public override BaseResponse ConvertToResponse(TimeSpan ts)
         {
-            var baseRes =  base.ConvertToResponse();
+            var baseRes =  base.ConvertToResponse(ts);
             return new BaseModelResponse<T>(baseRes, Model);
         }
     }

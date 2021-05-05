@@ -33,7 +33,7 @@ namespace Outputs.Factories
         {
             if (obj == null) 
                 return await CreateActionResultAsync(controller, new BaseResponse() { ElapsedTime = controller.ElapsedWatch.Elapsed, Timestamp = DateTime.Now.ToUniversalTime() }, code);
-            return await CreateActionResultAsync(controller, obj.ConvertToResponse(), code);
+            return await CreateActionResultAsync(controller, obj.ConvertToResponse(controller.ElapsedWatch.Elapsed), code);
         }
         
         public static async Task<IActionResult> CreateActionResultAsync(Exception exception)

@@ -163,10 +163,11 @@ namespace Outputs.Outputs
             return this;
         }
 
-        public virtual BaseResponse ConvertToResponse()
+        public virtual BaseResponse ConvertToResponse(TimeSpan ts)
         {
             return new BaseResponse
             {
+                ElapsedTime = ts,
                 ErrorCodes = Errors.Select(elem => elem.Code).ToList(),
                 Errors = Errors.Select(elem => elem.Message).ToList(),
                 Warnings = Warnings.Select(elem => elem.Message).ToList(),
