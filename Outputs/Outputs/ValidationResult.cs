@@ -6,6 +6,7 @@ using System.Text;
 using Outputs.Constants;
 using Outputs.Extensions;
 using Outputs.Items;
+using Outputs.Responses;
 
 namespace Outputs.Outputs
 {
@@ -60,6 +61,11 @@ namespace Outputs.Outputs
         private ValidationWarning[] Warnings
         {
             get => Validations.OfType<ValidationWarning>().ToArray();
+            set => Validations.AddRange(value);
+        }
+        private ValidationMessage[] Messages
+        {
+            get => Validations.OfType<ValidationMessage>().ToArray();
             set => Validations.AddRange(value);
         }
 
@@ -155,6 +161,17 @@ namespace Outputs.Outputs
         {
             Validations.AddRange(validationResult.Validations);
             return this;
+        }
+
+        public virtual BaseResponse ConvertToResponse()
+        {
+            return new BaseResponse
+            {
+                ErrorCodes = Errors.Select(elem => elem.Code).ToList(),
+                Errors = Errors.Select(elem => elem.Message).ToList(),
+                Warnings = Warnings.Select(elem => elem.Message).ToList(),
+                Messages = Messages.Select(elem => elem.Message).ToList(),
+            };
         }
 
         public override string ToString()
