@@ -8,9 +8,9 @@
         <Title>Also.Standards.Outputs</Title>
         <Authors>Miguel Govin</Authors>
         <Description>Standards output of sequentially or not processing</Description>
-        <PackageVersion>1.0.2</PackageVersion>
-        <AssemblyVersion>1.0.2</AssemblyVersion>
-        <FileVersion>1.0.2</FileVersion>
+        <PackageVersion>1.0.3</PackageVersion>
+        <AssemblyVersion>1.0.3</AssemblyVersion>
+        <FileVersion>1.0.3</FileVersion>
     </PropertyGroup>
 
     <ItemGroup>

@@ -27,7 +27,7 @@ namespace Aslo.Standards.Outputs.Controllers
             catch (Exception ex)
             {
                 _logger.Log(LogLevel.Error, "Exception: {Ex}", ex);
-                return await HttpActionResultFactory.CreateActionResultAsync(ex);
+                return await HttpActionResultFactory.CreateActionResultAsync(this, ex);
             }
 
             finally

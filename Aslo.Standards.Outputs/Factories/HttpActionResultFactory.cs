@@ -32,13 +32,15 @@ namespace Aslo.Standards.Outputs.Factories
         public static async Task<IActionResult> CreateActionResultAsync(AsloBaseController controller, ValidationResult obj, HttpStatusCode code = HttpStatusCode.OK)
         {
             if (obj == null) 
-                return await CreateActionResultAsync(controller, new BaseResponse() { ElapsedTime = controller.ElapsedWatch.Elapsed, Timestamp = DateTime.Now.ToUniversalTime() }, code);
+                return await CreateActionResultAsync(controller, new BaseResponse { ElapsedTime = controller.ElapsedWatch.Elapsed, Timestamp = DateTime.Now.ToUniversalTime() }, code);
             return await CreateActionResultAsync(controller, obj.ConvertToResponse(controller.ElapsedWatch.Elapsed), code);
         }
         
-        public static async Task<IActionResult> CreateActionResultAsync(Exception exception)
+        public static async Task<IActionResult> CreateActionResultAsync(AsloBaseController controller, Exception exception, HttpStatusCode code = HttpStatusCode.InternalServerError)
         {
-            return await Task.FromResult(new ObjectResult(exception.Message) { StatusCode = (int)HttpStatusCode.InternalServerError });
+            var res = new ValidationResult(exception);
+            // return await Task.FromResult(new ObjectResult(exception.Message) { StatusCode = (int)HttpStatusCode.InternalServerError });
+            return await CreateActionResultAsync(controller, res, code);
         }
     }
 }
